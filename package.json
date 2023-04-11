@@ -1,0 +1,27 @@
+{
+  "name": "tg-chatgpt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/express": "^4.17.17",
+    "express": "^4.18.2",
+    "grammy": "^1.15.3",
+    "openai": "^3.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && npm run zip",
+    "zip": "bestzip my-app.zip dist/index.js dist/bot.js dist/openai.js package.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "bestzip": "^2.2.1",
+    "ts-loader": "^9.4.2",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  }
+}
